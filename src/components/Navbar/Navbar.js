@@ -3,7 +3,36 @@ import { FcShop } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import Button from "../../layouts/Button";
 import { IoSearchOutline } from "react-icons/io5";
-import { FaCartShopping } from "react-icons/fa6";
+import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
+
+const DropdownLink = [
+  {
+    id:1,
+    name:"Mens Wear",
+    link: "/#",
+  },
+  {
+    id:2,
+    name:"Women Wear",
+    link: "/#",
+  },
+  {
+    id:3,
+    name:"Kid Wear",
+    link: "/#",
+  },
+  {
+    id:4,
+    name:"Decorations",
+    link: "/#",
+  },
+  {
+    id:5,
+    name:"Beauty",
+    link: "/#",
+  },
+]
+
 
 function Navbar() {
   return (
@@ -28,10 +57,34 @@ function Navbar() {
           <Link to="special" className="hover:text-[#F4511F] cursor-pointer">
             Special
           </Link>
-          <Link to="menu" className="hover:text-[#F4511F] cursor-pointer">
-            Category
-          </Link>
-          <Link to="review" className="hover:text-[#F4511F] cursor-pointer">
+
+          <div className="group relative cursor-pointer">
+            <Link
+              to="Category"
+              className="flex items-center hover:text-[#F4511F] gap-[2px] py-2"
+            >
+              Category
+              <span>
+                <FaCaretDown className=" transition-all duration-200 group-hover:rotate-180" />
+              </span>
+            </Link>
+
+            <div className=" absolute z-[9999] hidden  group-hover:block w-[150px]  rounded-md bg-white p-2 text-black shadow-md">
+              <ul>
+                {DropdownLink.map((data)=>(
+                  <li key={data.id}>
+                      <a href={data.link}
+                      className=" inline-block w-full text-[14px] rounded-md p-2 hover:bg-[#F4511F]/50 ">
+                        {data.name}
+                      </a>
+                  </li>
+                ))
+                }
+              </ul>
+            </div>
+          </div>
+
+          <Link to="review" className="hover:text-[#F4511F] cursor-pointer" > 
             Reviews
           </Link>
 
