@@ -1,11 +1,11 @@
-import Navbar from "./components/Navbar";
-
-
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
-    <div className="">
-      <Navbar/>
+    <div>
+      <Navbar />
+      <Hero />
     </div>
   );
 }
