@@ -16,7 +16,7 @@ const ImageList = [
   {
     id: 2,
     img: Image2,
-    title: "30% off on all Women's Wear",
+    title: "50% off on all Women's Wear",
     description:
       "lWho's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
@@ -44,44 +44,38 @@ function Hero() {
   };
 
   return (
-    <div className="mt-10">
-      <div className=" relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center">
-        {/* background pattern */}
-        <div className=" w-[700px] h-[700px] bg-[#F4511F]/40 absolute -top-1/2 right-0 rounded-3xl rotate-45"></div>
-        {/* hero section */}
-
-        <div className="  pb-8 sm:pb-0">
-          <div className="">
-            <div className=" grid grid-cols-1 sm:grid-cols-2">
-              <Slider {...settings}>
-                {ImageList.map((item) => (
-                  <div className="" key={item.id}>
-                    <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left border-2 sm:order-1 relative z-10">
-                      <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
-                        {item.title}
-                      </h1>
-                      <p className="text-sm">{item.description}</p>
-                      <div>
-                        <button className="bg-[#F4511F] hover:scale-105 duration-200 text-white py-2 px-4 rounded-3xl">
-                          Order Now
-                        </button>
-                      </div>
-                    </div>
-                    <div className="order-1 sm:order-2">
-                      <div>
-                        <img
-                          src={item.img}
-                          alt=""
-                          className="w-[300px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain mx-auto"
-                        />
-                      </div>
-                    </div>
+    <div className="overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center">
+  
+      <div className="container pb-8 sm:pb-0">
+        
+        <Slider {...settings} className="mt-10">
+          {ImageList.map((item) => (
+            <div key={item.id}>
+              <div className=" grid grid-cols-1 sm:grid-cols-2">
+                <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left oeder-2 sm:order-1 relative z-10">
+                  <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
+                    {item.title}
+                  </h1>
+                  <p className="text-sm">{item.description}</p>
+                  <div>
+                    <button className="bg-[#F4511F] hover:scale-105 duration-200 text-white py-2 px-4 rounded-3xl">
+                      Order Now
+                    </button>
                   </div>
-                ))}
-              </Slider>
+                </div>
+                <div className="order-1 sm:order-2">
+                  <div>
+                    <img
+                      src={item.img}
+                      alt=""
+                      className="w-[200px] sm:h-[200px] sm:w-[450px] sm:scale-125 object-contain mx-auto"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

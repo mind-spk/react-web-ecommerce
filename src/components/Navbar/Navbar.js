@@ -36,7 +36,7 @@ const DropdownLink = [
 
 function Navbar() {
   return (
-    <div className="bg-gray-500/10 w-full ">
+    <div className="bg-gray-100 fixed w-full ">
       <div className="flex flex-row justify-between p-5 md:px32 px-5 bg-white/10 shadow-[0_3px_10px_rgba(0,0,0,0.2)]">
         <div className="flex flex-row items-center cursor-pointer">
           <span>
