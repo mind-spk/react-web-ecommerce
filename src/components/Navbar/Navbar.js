@@ -113,7 +113,7 @@ function Navbar() {
 
             <button className=" p-2 rounded">🌙</button>
 
-            <Button title="Login" />
+            <Button title="Sign Up" to="/login" />
           </div>
         </nav>
       </div>

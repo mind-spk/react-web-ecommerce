@@ -45,9 +45,7 @@ function Hero() {
 
   return (
     <div className="overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center">
-  
       <div className="container pb-8 sm:pb-0">
-        
         <Slider {...settings} className="mt-10">
           {ImageList.map((item) => (
             <div key={item.id}>
