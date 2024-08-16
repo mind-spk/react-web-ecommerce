@@ -50,7 +50,7 @@ function Hero() {
           {ImageList.map((item) => (
             <div key={item.id}>
               <div className=" grid grid-cols-1 sm:grid-cols-2">
-                <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left oeder-2 sm:order-1 relative z-10">
+                <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left oeder-2 sm:order-1 relative ">
                   <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
                     {item.title}
                   </h1>
