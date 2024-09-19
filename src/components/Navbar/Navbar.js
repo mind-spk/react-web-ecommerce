@@ -93,7 +93,7 @@ function Navbar() {
               <input
                 type="text"
                 placeholder="search"
-                className="text-wrap rounded-full group-hover:w-[300px] w-[200px] sm:w-[200px]  placeholder:p-6 border-gray-300 focus:outline-none focus:border-1 focus:border-[#F4511F]"
+                className="text-wrap px-3 rounded-full group-hover:w-[300px] w-[200px] sm:w-[200px]  placeholder:p-6 border-gray-300 focus:outline-none focus:border-1 focus:border-[#F4511F]"
               />
               <IoSearchOutline className="text-gray-500 group-hover:text-[#F4511F] absolute top-1/2 -translate-y-1/2 right-3" />
             </div>

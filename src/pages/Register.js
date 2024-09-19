@@ -12,7 +12,7 @@ const RegisterSchema = z.object({
 
 function Register() {
   return (
-    <div className="flex flex-col gap-2 mt-5">
+    <div className="flex flex-col gap-2 mt-5 ">
       <Input placeholder={"Email"}/>
       <Input placeholder={"Password"}/>
       <Input placeholder={"Confirm Password"}/>

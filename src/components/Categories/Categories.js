@@ -4,7 +4,7 @@ import { GrFormPreviousLink } from "react-icons/gr";
 
 function Categories() {
   return (
-    <div className=" bg-slate-400 w-full h-screen mt-14 mb-12 ">
+    <div className=" bg-slate-100 w-full h-screen mt-14 mb-12 ">
       <div className="flex flex-col gap-5">
         <div className="text-[#DB4444] font-semibold text-[16px]">Categories</div>
 

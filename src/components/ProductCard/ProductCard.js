@@ -34,9 +34,7 @@ function ProductCard({
         <span className="text-muted line-through">{originalPrice}</span>
       </div>
       {isAddToCart && (
-        <button className="w-full py-2 rounded-md">
-          Add To Cart
-        </button>
+        <button className="w-full py-2 rounded-md">Add To Cart</button>
       )}
       <div className="flex items-center space-x-1 mt-2">
         <span className="text-yellow-500">{rating}</span>

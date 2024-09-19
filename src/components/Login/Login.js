@@ -1,10 +1,8 @@
 // src/Login.js
 import React, { useState } from "react";
 import { FaFacebook } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { Link } from "react-router-dom";
-
 
 function Login() {
   const [submit, setSubmit] = useState();
@@ -52,7 +50,7 @@ function Login() {
   };
 
   return (
-    <div className=" bg-gray-500 w-full h-screen ">
+    <div className=" w-full h-screen bg-orange-500/80 ">
       <div className="flex justify-end items-end min-w-10 p-[100px] mr-[120px]">
         <div>
           <form
@@ -106,10 +104,9 @@ function Login() {
 
             <div className="flex justify-around gap-8 mt-10 text-3xl font-semibold">
               <FaFacebook />
-              <FaGithub />
               <BiLogoGmail />
             </div>
-            <label className="mt-5 bg-transparent hover:bg-slate-400 focus:top-[10]">
+            <label className="mt-5 bg-transparent hover:text-blue-400 focus:top-[10]">
               <Link to="/register">Create new account</Link>
             </label>
           </form>
